@@ -1,0 +1,39 @@
+:root {
+  --light-background: #ffffff;
+  --dark-background: #000000;
+  --light-text: #000000;
+  --dark-text: #ffffff;
+}
+
+body {
+  background-color: var(--light-background);
+  color: var(--light-text);
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Smoother transition for theme change */
+}
+
+.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: inherit;
+}
+
+.text-heading {
+  margin-left: -5rem;
+  text-align: left;
