@@ -1,0 +1,18 @@
+.custom-text-field .MuiInputBase-root {
+  background-color: #cdcdcd;
+  border-radius: 1rem;
+}
+
+.custom-text-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  display: none;
+}
+
+.custom-text-field .MuiInputBase-input::placeholder {
+  color: #2d2d2d;
+  font-weight: bold;
+}
+
+.custom-text-field .MuiInputBase-input {
+  color: #2d2d2d;
+  font-weight: bold;
+}

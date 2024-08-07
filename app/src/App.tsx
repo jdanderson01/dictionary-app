@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TopBar from "./components/TopBar";
+import SearchBar from "./components/SearchBar";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <div>
       <TopBar onToggle={toggleDarkMode} isDarkMode={isDarkMode} />
+      <SearchBar />
       <h1 className="text-heading">Welcome</h1>
     </div>
   );
