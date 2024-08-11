@@ -1,6 +1,9 @@
+/* Default search bar styling */
 .custom-text-field .MuiInputBase-root {
   background-color: #cdcdcd;
   border-radius: 1rem;
+  width: 36.3rem; /* Desktop width */
+  margin-left: -5.2rem; /* Adjust based on layout */
 }
 
 .custom-text-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
@@ -15,4 +18,16 @@
 .custom-text-field .MuiInputBase-input {
   color: #2d2d2d;
   font-weight: bold;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .custom-text-field .MuiInputBase-root {
+    width: 5rem;
+    margin-left: -7.3rem;
+  }
+
+  .custom-text-field .MuiInputBase-input {
+    margin-left: 5rem;
+  }
 }

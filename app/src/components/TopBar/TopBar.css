@@ -1,0 +1,86 @@
+.topBar {
+  color: white;
+  margin-top: -17rem;
+  display: flex;
+  align-items: center;
+}
+
+.topBar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.topBar li {
+  position: relative;
+}
+
+.book-icon {
+  margin-left: -5rem;
+  margin-right: 20rem;
+  padding-right: 5rem;
+}
+
+.down-arrow {
+  margin-right: 1rem; /* Adjust to position */
+}
+
+.divider {
+  width: 1px;
+  height: 20px; /* Adjust height as needed */
+  background-color: black; /* Set divider color to black */
+  margin: 0 1rem; /* Adjust space around divider */
+}
+
+.moon-icon {
+  margin-left: 1rem;
+}
+
+.toggle-button {
+  --handle-background: white;
+  --background-checked: #4caf50;
+  --background: #ccc;
+  --width: 3.125rem;
+  --height: 1.5625rem;
+  --border-radius: 1.5625rem;
+  --handle-border-radius: 50%;
+}
+
+.topBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.topBar a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .book-icon {
+    margin-left: -8rem; /* Adjust margin */
+    margin-right: 4rem;
+    padding-right: 0;
+  }
+
+  .topBar {
+    margin-top: 0; /* Adjust margin for mobile */
+    justify-content: center; /* Center items */
+  }
+
+  .topBar ul {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between; /* Space between items */
+  }
+
+  .moon-icon {
+    margin-left: 2rem;
+  }
+
+  .divider {
+    height: 1.5rem; /* Adjust height */
+    margin: 0 0.5rem; /* Adjust space around divider */
+  }
+}

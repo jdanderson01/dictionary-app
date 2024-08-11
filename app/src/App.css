@@ -37,3 +37,11 @@ h1 {
 .text-heading {
   margin-left: -5rem;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .text-heading {
+    position: relative;
+    left: -2rem;
+  }
+}
