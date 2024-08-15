@@ -20,7 +20,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   return (
     <div>
       <TextField
-        label="Search"
         variant="outlined"
         value={searchTerm}
         onChange={handleChange}

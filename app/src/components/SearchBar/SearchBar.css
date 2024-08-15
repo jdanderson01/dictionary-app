@@ -1,9 +1,8 @@
-/* Default search bar styling */
 .custom-text-field .MuiInputBase-root {
   background-color: #cdcdcd;
   border-radius: 1rem;
-  width: 36.3rem; /* Desktop width */
-  margin-left: -5.2rem; /* Adjust based on layout */
+  width: 36.3rem;
+  margin-left: 5.2rem;
 }
 
 .custom-text-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
@@ -20,7 +19,6 @@
   font-weight: bold;
 }
 
-/* Mobile view adjustments */
 @media (max-width: 768px) {
   .custom-text-field .MuiInputBase-root {
     width: 5rem;

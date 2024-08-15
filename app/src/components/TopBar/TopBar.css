@@ -1,6 +1,6 @@
 .topBar {
   color: white;
-  margin-top: -17rem;
+  margin-top: -5rem;
   display: flex;
   align-items: center;
 }
@@ -19,20 +19,20 @@
 }
 
 .book-icon {
-  margin-left: -5rem;
+  margin-left: 5.2rem;
   margin-right: 20rem;
   padding-right: 5rem;
 }
 
 .down-arrow {
-  margin-right: 1rem; /* Adjust to position */
+  margin-right: 1rem;
 }
 
 .divider {
   width: 1px;
-  height: 20px; /* Adjust height as needed */
-  background-color: black; /* Set divider color to black */
-  margin: 0 1rem; /* Adjust space around divider */
+  height: 20px;
+  background-color: black;
+  margin: 0 1rem;
 }
 
 .moon-icon {

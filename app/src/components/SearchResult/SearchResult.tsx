@@ -1,16 +1,15 @@
-// src/components/SearchResult/SearchResult.tsx
-
-import React from "react";
 import WordDisplay from "./WordDisplay";
 import Phonetics from "./Phonetics";
+import Definitions from "./Definitions";
 import "./SearchResult.css";
+
+interface Definition {
+  definition: string;
+}
 
 interface Meaning {
   partOfSpeech: string;
-  definitions: {
-    definition: string;
-    example?: string;
-  }[];
+  definitions: Definition[];
 }
 
 interface Phonetic {
@@ -28,12 +27,13 @@ interface SearchResultProps {
 const SearchResult: React.FC<SearchResultProps> = ({ data }) => {
   const { word, phonetics, meanings } = data;
 
-  console.log("SearchResult data:", data);
+  const definitions = meanings.flatMap((meaning) => meaning.definitions);
 
   return (
     <div className="search-result">
       <WordDisplay word={word} />
       <Phonetics phonetics={phonetics} />
+      <Definitions definitions={definitions} />
     </div>
   );
 };
