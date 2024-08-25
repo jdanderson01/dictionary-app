@@ -19,6 +19,21 @@
   font-weight: bold;
 }
 
+.search-bar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem; /* Adjust this based on your design */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 1.5rem; /* Adjust size as needed */
+  height: 1.5rem; /* Adjust size as needed */
+}
+
 @media (max-width: 768px) {
   .custom-text-field .MuiInputBase-root {
     width: 5rem;

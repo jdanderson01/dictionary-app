@@ -1,6 +1,14 @@
 .search-result {
-  max-width: 46.0625rem;
-  max-height: 51.625rem;
+  max-width: 26.0625rem;
+  max-height: 11.625rem;
   margin: 0 auto;
-  padding-top: -4rem;
+  margin-left: 5.2rem;
+  padding-top: 1px;
+  text-align: left;
+}
+
+.word-display,
+.phonetics,
+.definitions {
+  font-size: 1rem;
 }

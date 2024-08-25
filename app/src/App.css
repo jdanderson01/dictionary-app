@@ -5,12 +5,16 @@
   --dark-text: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: var(--light-background);
+  background-color: var(--light-background) !important; /* Force override */
   color: var(--light-text);
-  transition:
-    background-color 0.3s,
-    color 0.3s; /* Smoother transition for theme change */
 }
 
 .dark-mode {

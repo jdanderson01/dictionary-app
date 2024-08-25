@@ -1,0 +1,18 @@
+.synonyms-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem; /* Adjust as needed */
+}
+
+.synonyms-heading {
+  margin-right: 0.5rem;
+}
+
+.synonyms-list {
+  display: inline;
+}
+
+.synonym-item {
+  margin-right: 0.5rem; /* Adjust spacing between synonyms */
+}

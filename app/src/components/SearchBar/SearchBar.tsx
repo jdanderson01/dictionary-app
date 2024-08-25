@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import TextField from "@mui/material/TextField";
+import { useState } from "react";
+import { TextField } from "@mui/material";
+import SearchIcon from "../../assets/images/icon-search.svg";
 import "./SearchBar.css";
 
 interface SearchBarProps {
@@ -7,26 +8,32 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
+  const handleSearchClick = () => {
+    if (searchTerm.trim() !== "") {
+      onSearch(searchTerm);
+    }
   };
-
-  const handleSearch = () => {
-    onSearch(searchTerm);
-  };
-
   return (
-    <div>
+    <div className="search-bar-container">
       <TextField
-        variant="outlined"
-        value={searchTerm}
-        onChange={handleChange}
-        fullWidth
         className="custom-text-field"
+        variant="outlined"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        InputProps={{
+          endAdornment: (
+            <img
+              src={SearchIcon}
+              alt="search"
+              className="search-icon"
+              onClick={handleSearchClick}
+            />
+          ),
+        }}
       />
-      <button onClick={handleSearch}>Search</button>
     </div>
   );
 };
